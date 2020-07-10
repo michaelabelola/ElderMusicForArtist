@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    android:translationZ="0dp"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardCornerRadius="0dp"
+    android:clickable="true"
+    app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <com.elder.eldermusicforartist.ui.RIV.RoundedImageView
+            android:id="@+id/image_small"
+            android:layout_width="@dimen/icon_view_56"
+            android:layout_height="@dimen/icon_view_56"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cover_5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:riv_corner_radius="@dimen/margin8" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/optionsIconHolder"
+            app:layout_constraintStart_toEndOf="@id/image_small"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="@string/loading"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:lines="1"
+                android:text="@string/loading"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/optionsIconHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/editIcon"
+                android:layout_width="@dimen/small_icon_20"
+                android:layout_height="@dimen/small_icon_20"
+                android:layout_marginStart="@dimen/margin8"
+                android:layout_marginEnd="@dimen/margin8"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/optionsIcon2"
+                android:layout_width="@dimen/small_icon_20"
+                android:layout_height="@dimen/small_icon_20"
+                android:layout_marginStart="@dimen/margin8"
+                android:layout_marginEnd="@dimen/margin8"
+                android:src="@drawable/ic_add_24px" />
+
+            <ImageView
+                android:id="@+id/optionsIcon"
+                android:layout_width="@dimen/small_icon_20"
+                android:layout_height="@dimen/small_icon_20"
+                android:layout_marginStart="@dimen/margin8"
+                android:layout_marginEnd="@dimen/margin8"
+                android:src="@drawable/ic_cloud_download_24px" />
+
+            <ImageView
+                android:id="@+id/deleteIcon"
+                android:layout_width="@dimen/small_icon_20"
+                android:layout_height="@dimen/small_icon_20"
+                android:layout_marginStart="@dimen/margin8"
+                android:layout_marginEnd="@dimen/margin8"
+                android:src="@drawable/ic_delete_24px" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

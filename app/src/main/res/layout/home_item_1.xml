@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.elder.eldermusicforartist.ui.RIV.RoundedImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:id="@+id/image_mainZ"
+    android:layout_margin="@dimen/margin8"
+    android:scaleType="centerCrop"
+    android:src="@drawable/cover_2"
+    app:riv_corner_radius="16dp" />
