@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "418642567975",
+    "firebase_url": "https://elder-first.firebaseio.com",
+    "project_id": "elder-first",
+    "storage_bucket": "elder-first.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418642567975:android:74006bc6f930dd7534ff02",
+        "android_client_info": {
+          "package_name": "com.elder.eldermusicforartist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "418642567975-binhgtd2bbhv8u8ubpd5dlalb2b8jdfr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.elder.eldermusicforartist",
+            "certificate_hash": "afc4b0422f8b37c933528813c08254584e594a69"
+          }
+        },
+        {
+          "client_id": "418642567975-7qar607l0vb8ce0qfch6r8t5b4cj1j4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqGU6GjWo1H64zl19tjVzeaHVxhajcXRQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "418642567975-7qar607l0vb8ce0qfch6r8t5b4cj1j4h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

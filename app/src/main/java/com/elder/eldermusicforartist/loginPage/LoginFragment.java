@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.elder.eldermusicforartist.R;
+import com.google.firebase.auth.FirebaseAuth;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -27,6 +28,7 @@ public class LoginFragment extends Fragment {
     private String mParam1;
     private String mParam2;
     private View rootView;
+    private FirebaseAuth mAuth;
 
     public LoginFragment() {
         // Required empty public constructor
@@ -67,14 +69,11 @@ public class LoginFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        mAuth = FirebaseAuth.getInstance();
         rootView = inflater.inflate(R.layout.fragment_login, container, false);
         TextView signUpSwitch = rootView.findViewById(R.id.signUpSwitch);
-        signUpSwitch.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                signUpSwitchListener.onSignUpSwitch(true);
-            }
-        });
+        signUpSwitch.setOnClickListener(view -> signUpSwitchListener.onSignUpSwitch(true));
+
         return rootView;
     }
 

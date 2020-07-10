@@ -28,7 +28,6 @@
             android:layout_weight="1"
             android:backgroundTint="@android:color/transparent"
             android:ems="10"
-            android:fontFamily="@font/poppins_light"
             android:hint="@string/e_mail"
             android:inputType="textEmailAddress"
             android:padding="16dp" />
@@ -43,7 +42,6 @@
             android:background="@drawable/rounded_bg"
             android:backgroundTint="@android:color/transparent"
             android:ems="10"
-            android:fontFamily="@font/poppins_light"
             android:hint="@string/password"
             android:inputType="textPassword"
             android:padding="16dp" />
@@ -89,7 +87,6 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginStart="@dimen/margin8"
-                android:fontFamily="@font/poppins_light"
                 android:text="@string/signup"
                 android:textColor="@color/colorPrimary" />
 

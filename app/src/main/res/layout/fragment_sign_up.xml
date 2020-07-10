@@ -8,16 +8,34 @@
     android:translationZ="0dp"
     app:cardElevation="0dp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:context=".loginPage.LoginFragment">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintTop_toTopOf="parent">
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/topViewLP"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/top_view_height"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30dp" />
+
+            </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -33,15 +51,15 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="16dp"
                 android:layout_weight="1"
+                android:background="@drawable/rounded_bg"
                 android:backgroundTint="@android:color/transparent"
                 android:ems="10"
-                android:fontFamily="@font/poppins_light"
                 android:hint="@string/e_mail"
                 android:inputType="textEmailAddress"
                 android:padding="16dp" />
 
             <EditText
-                android:id="@+id/editTextTextPassword"
+                android:id="@+id/editTextPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -50,13 +68,12 @@
                 android:background="@drawable/rounded_bg"
                 android:backgroundTint="@android:color/transparent"
                 android:ems="10"
-                android:fontFamily="@font/poppins_light"
                 android:hint="@string/password"
                 android:inputType="textPassword"
                 android:padding="16dp" />
 
             <EditText
-                android:id="@+id/editTextTextConfirmPassword"
+                android:id="@+id/editTextConfirmPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -65,7 +82,6 @@
                 android:background="@drawable/rounded_bg"
                 android:backgroundTint="@android:color/transparent"
                 android:ems="10"
-                android:fontFamily="@font/poppins_light"
                 android:hint="@string/confirm_password"
                 android:inputType="textPassword"
                 android:padding="16dp" />
@@ -76,24 +92,27 @@
                 android:layout_margin="16dp">
 
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/signUpContinue"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:enabled="false"
                     android:padding="16dp"
-                    android:text="@string/signup"
-                    app:cornerRadius="100dp" />
+                    android:text="@string/signup" />
 
                 <ProgressBar
                     android:id="@+id/progressBar"
                     style="?android:attr/progressBarStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
 
             </FrameLayout>
 
         </LinearLayout>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
 
 </com.google.android.material.card.MaterialCardView>
